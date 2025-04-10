@@ -1,0 +1,21 @@
+.btn-primary[b-bd92jrgikk] {
+    background-color: #4D55DE ;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.btn-outline-danger[b-bd92jrgikk] {
+    background-color: white;
+    color: #E54522;
+    border: 2px solid #E54522;
+    padding: 10px 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}

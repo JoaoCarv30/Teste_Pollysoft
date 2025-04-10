@@ -1,0 +1,132 @@
+﻿@page "/"
+@using teste_blazor.Components
+
+<PageTitle>Viking</PageTitle>
+
+
+<section class="container-page">
+    
+    
+    <div class="under_image">
+        
+    </div>
+
+    <div class="under_bottom_left">
+        <img src="./Assets/Bottom_rectangle.png" alt="">
+    </div>
+    
+    <div class="under_top_right">
+        <img src="./Assets/TopRight_rectangle.png" alt="">
+    </div>
+
+    <div class="left-side">
+
+            <img src="./Assets/container.png" alt="" class="image-container">
+
+        <div class="content-left">
+            <div class="principal-content-left">
+                <h1>Convite</h1>
+                <p class="invite-text">Você foi convidado por <strong>João Silva</strong> para comparecer à Associação Viking no dia
+                    <strong>17/05/2024 - 09:00</strong> no espaço <strong>Churrasqueira 01</strong>. </p>
+            </div>
+            <hr/>
+            <div class="middle-content-left">
+                <div class="informations">
+                    <h3>Data</h3>
+                    <p>17/05/2024 - 9:00</p>
+                </div>
+                <div class="informations">
+                    <h3>Local</h3>
+                    <div class="local">
+                        <p>Associação Viking, Churrasqueira 01</p>
+                        <a href="https://www.pollysoft.com.br/" target="_blank"> <img src="./Assets/icon.png" alt=""> Veja Como 
+                            chegar
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="about">
+                <div>
+                    <img src="./Assets/Vector.png" alt="">
+                </div>
+                <div class="about_viking">
+                    <h2>
+                        Sobre a Associação Viking
+                    </h2>
+                    <p>
+                        Localizada em Curitiba, a Associação Viking é uma organização fundada em 1980 por empregados
+                        brasileiros e suecos da Volvo do Brasil. Conhecida pela sua excelente infraestrutura de lazer e
+                        esportes, além de um calendário intenso de eventos sociais e esportivos.
+                    </p>
+                    <a href="http://www.pollysoft.com.br">Saiba mais </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right-side">
+
+        <div class="content-right">
+            <div class="guests">
+                <h2>Seus convidados</h2>
+
+                <div class="guests-texts">
+                    <p>
+                        Você pode convidar até <strong>3 pessoas</strong> para este convite. Informe o nome completo dos participantes
+                        nos
+                        campos abaixo.
+                    </p>
+
+                    <p>
+                        Caso confirme sua presença, solicite ao anfitrião o <strong>QR code de acesso</strong> á Associação Viking
+                        referente
+                        a este convite. Este código é válido para você e seus convidados.
+                    </p>
+
+                    <p>
+                        Para mais informações, consulte o
+                        <a href="http://www.pollysoft.com.br"  target="_blank">regimento interno da
+                            Associação Viking</a>.
+                    </p>
+
+                </div>
+            </div>
+            <div class="warning">
+                <p>
+                    <strong>Atenção:</strong> Não será permitido o acesso na Associação Viking<br/>
+                    participantes que não estejam identificados.
+                </p>
+            </div>
+
+            <div class="invite">
+
+                <div class="invite-form">
+                    <h2>Maria Silva e família</h2>
+                    <div class="inputs">
+                        <Input invitedName="Convidado 1"/>
+                        <Input invitedName="Convidado 2"/>
+                        <Input invitedName="Convidado 3"/>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <h2> Confirmar Presença ? </h2>
+                    <p>Confirme sua presença até <strong>16/05/2024 </strong> - 23:59. </p>
+
+
+                    <div class="buttons">
+                        <Button Name="Recusar convite" Variant="outline-danger" />
+                        <Button Name="Estarei presente" Variant="primary" />
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</section>      
