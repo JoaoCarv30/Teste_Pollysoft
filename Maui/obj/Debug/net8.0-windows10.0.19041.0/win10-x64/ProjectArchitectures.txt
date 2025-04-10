@@ -1,0 +1,1 @@
+C:\Dev\Pollysoft_Teste\Maui\Maui.csproj;x64

@@ -1,0 +1,84 @@
+﻿<?xml version = "1.0" encoding = "utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="Maui.MainPage"
+		BackgroundColor="#F8FAFF"
+		Shell.NavBarIsVisible="False" >
+
+	<ScrollView>
+		<VerticalStackLayout Padding="24,20" Spacing="20" >
+			<Image Source="arrow.png" HeightRequest="12" WidthRequest="17" HorizontalOptions="Start" />
+			<Label Text="Etapa 2 de 2" FontSize="12" TextColor="Gray" HorizontalOptions="Start" />
+			<Label Text="Cadastrar" FontSize="24" FontAttributes="Bold" TextColor="#1D1F49" HorizontalOptions="Start" FontFamily="DMSansBold" />
+			<Label Text="Informe seus dados complementares." FontSize="14" TextColor="#7C7C8A" HorizontalOptions="Start" FontFamily="DMSansRegular" />
+
+			<VerticalStackLayout Spacing="30" >
+				
+				<VerticalStackLayout Spacing="4" >
+					<Label Text="E-mail" FontSize="14" TextColor="#393939" FontFamily="DMSansRegular" />
+					<Frame HasShadow="False" CornerRadius="8" Padding="0" HeightRequest="48" BorderColor="#E0E0E0" BackgroundColor="#F8FAFF" >
+						<Grid ColumnDefinitions="Auto, *" Padding="12,0" VerticalOptions="CenterAndExpand" >
+							<Image Source="sms.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" />
+							<Entry x:Name="EmailEntry" Placeholder="Insira seu e-mail" PlaceholderColor="#A1A1AA" BackgroundColor="Transparent" TextColor="#1F2937" Grid.Column="1" Margin="8,0" HeightRequest="40" Visual="Default" FontFamily="DMSansRegular" />
+						</Grid>
+					</Frame>
+					<Label x:Name="EmailErrorLabel" Text="O email inserido não é válido." TextColor="Red" FontSize="12" IsVisible="False" Margin="4,0,0,0" FontFamily="DMSansBold" />
+				</VerticalStackLayout>
+				
+				<VerticalStackLayout Spacing="4" >
+					<Label Text="Confirme seu email" FontSize="14" TextColor="#393939" FontFamily="DMSansRegular" />
+					<Frame HasShadow="False" CornerRadius="8" Padding="0" HeightRequest="48" BorderColor="#E0E0E0" BackgroundColor="#F8FAFF" >
+						<Grid ColumnDefinitions="Auto, *" Padding="12,0" VerticalOptions="CenterAndExpand" >
+							<Image Source="sms.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" />
+							<Entry x:Name="ConfirmEmailEntry" Placeholder="Insira seu e-mail" PlaceholderColor="#A1A1AA" BackgroundColor="Transparent" TextColor="#1F2937" Grid.Column="1" Margin="8,0" HeightRequest="40" Visual="Default" FontFamily="DMSansRegular" />
+						</Grid>
+					</Frame>
+					<Label x:Name="ConfirmEmailErrorLabel" Text="Os e-mails não coincidem." TextColor="Red" FontSize="12" IsVisible="False" Margin="4,0,0,0" FontFamily="DMSansBold" />
+				</VerticalStackLayout>
+				
+				<VerticalStackLayout Spacing="4" >
+					<Label Text="Telefone de Contato" FontSize="14" TextColor="#393939" FontFamily="DMSansRegular" />
+					<Frame HasShadow="False" CornerRadius="8" Padding="0" HeightRequest="48" BorderColor="#E0E0E0" BackgroundColor="#F8FAFF" >
+						<Grid ColumnDefinitions="Auto, *" Padding="12,0" VerticalOptions="CenterAndExpand" >
+							<Image Source="call.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" />
+							<Entry x:Name="PhoneEntry" Placeholder="(00) 0 0000-0000" PlaceholderColor="#A1A1AA" BackgroundColor="Transparent" TextColor="#1F2937" Grid.Column="1" Margin="8,0" HeightRequest="40" Visual="Default" Keyboard="Numeric" FontFamily="DMSansRegular" MaxLength="11" />
+						</Grid>
+					</Frame>
+					<Label x:Name="ConfirmPhoneErrorLabel" Text="O numero deve conter 11 caracteres." TextColor="Red" FontSize="12" IsVisible="False" Margin="4,0,0,0" FontFamily="DMSansBold" />
+				</VerticalStackLayout>
+				
+				<VerticalStackLayout Spacing="4" >
+					<Label Text="Senha" FontSize="14" TextColor="#393939" FontFamily="DMSansRegular" />
+					<Frame HasShadow="False" CornerRadius="8" Padding="0" HeightRequest="48" BorderColor="#E0E0E0" BackgroundColor="#F8FAFF" >
+						<Grid ColumnDefinitions="Auto, *, Auto" Padding="12,0" VerticalOptions="CenterAndExpand" >
+							<Image Source="lock.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" />
+							<Entry x:Name="PasswordEntry" Placeholder="Insira sua senha" PlaceholderColor="#A1A1AA" BackgroundColor="Transparent" TextColor="#1F2937" Grid.Column="1" Margin="8,0" HeightRequest="40" Visual="Default" IsPassword="True" FontFamily="DMSansRegular" MaxLength="20"/>
+							<Image Source="edit.png" WidthRequest="16" HeightRequest="16" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" />
+						</Grid>
+					</Frame>
+					<Label x:Name="PasswordErrorLabel" Text="A senha deve conter pelo menos 8 caracteres." TextColor="Red" FontSize="12" IsVisible="False" Margin="4,0,0,0" FontFamily="DMSansBold" />
+				</VerticalStackLayout>
+				
+				<VerticalStackLayout Spacing="4" >
+					<Label Text="Confirmar senha" FontSize="14" TextColor="#393939" FontFamily="DMSansRegular" />
+					<Frame HasShadow="False" CornerRadius="8" Padding="0" HeightRequest="48" BorderColor="#E0E0E0" BackgroundColor="#F8FAFF" >
+						<Grid ColumnDefinitions="Auto, *, Auto" Padding="12,0" VerticalOptions="CenterAndExpand" >
+							<Image Source="lock.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" />
+							<Entry x:Name="ConfirmPasswordEntry" Placeholder="Insira sua senha" PlaceholderColor="#A1A1AA" BackgroundColor="Transparent" TextColor="#1F2937" Grid.Column="1" Margin="8,0" HeightRequest="40" Visual="Default" IsPassword="True" FontFamily="DMSansRegular" MaxLength="20" />
+							<Image Source="edit.png" WidthRequest="16" HeightRequest="16" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" />
+						</Grid>
+					</Frame>
+					<Label x:Name="ConfirmPasswordErrorLabel" Text="As senhas não coincidem." TextColor="Red" FontSize="12" IsVisible="False" Margin="4,0,0,0" FontFamily="DMSansBold" />
+				</VerticalStackLayout>
+			</VerticalStackLayout>
+
+			
+			<Grid Margin="-24,0" >
+				<BoxView HeightRequest="1" BackgroundColor="#E4E4E7" HorizontalOptions="FillAndExpand" Margin="0,30,0,0" />
+			</Grid>
+			
+			<Button x:Name="RegisterButton" Text="Cadastrar" IsEnabled="False" Margin="0,2,0,0" TextColor="#C9D9FC" FontFamily="DMSansBold" BackgroundColor="#A9BFF8" FontSize="16" />
+		</VerticalStackLayout>
+	</ScrollView>
+</ContentPage>
